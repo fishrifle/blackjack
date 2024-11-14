@@ -1,0 +1,119 @@
+/* Casino Table Green Background */
+body {
+  background-color: #0b6623; /* Dark green background */
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for centered title, winner message, and game areas */
+.kl {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Centered title styling */
+.kl h1 {
+  font-size: 2.5em;
+  color: #ffd700; /* Gold color for title */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  margin-bottom: 20px;
+}
+
+/* Winner message styling */
+.winner-message {
+  color: #ffd700; /* Gold color for winner message */
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  animation: fadeIn 1s ease;
+}
+
+/* Fade-in animation for winner message */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Main game area container for player and dealer sides */
+.ma {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+/* Player and Dealer Side Styling */
+.playerside,
+.dealerside {
+  background: #1a1a1a; /* Dark background for cards */
+  color: #ffffff;
+  width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #face0c; /* Gold border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Player-specific and dealer-specific colors */
+.playerside {
+  background-color: #2d882d; /* Dark green for player */
+}
+
+.dealerside {
+  background-color: #b22222; /* Dark red for dealer */
+}
+
+/* Card list styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+/* Score styling */
+.playerside p,
+.dealerside p {
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+/* Button container with flex layout */
+.buttons {
+  display: flex;
+  justify-content: center; /* Center-align the buttons */
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Button styling */
+button {
+  background-color: #1a1a1a; /* Dark black */
+  color: #face0c; /* Gold color */
+  border: 2px solid #face0c;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  background-color: #333333;
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(255, 223, 0, 0.6);
+  transform: scale(1.05);
+}
